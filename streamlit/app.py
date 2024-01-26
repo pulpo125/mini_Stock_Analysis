@@ -35,9 +35,8 @@ col3.markdown("##### Stock price Graph")
 col3.line_chart(stocks_df.iloc[:,1::])
 
 # correlation plot
-col4.write("##### Correlation Analysis Heatmap")
-plot = sns.heatmap(stocks_df.corr(method = 'pearson'), cmap='YlOrRd', annot=True)
-col4.pyplot(plot.get_figure())
+col4.write("##### Correlation Analysis")
+st.dataframe(stocks_df.corr(method = 'pearson'), cmap='YlOrRd', annot=True)
 
 st.markdown("##### :pushpin: 상관관계 분석 결과")
 st.markdown('''
