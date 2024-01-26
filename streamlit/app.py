@@ -37,7 +37,7 @@ col3.line_chart(stocks_df.iloc[:,1::])
 # correlation plot
 col4.write("##### Correlation Analysis")
 try:
-    col4.dataframe(stocks_df.corr(method = 'pearson'), width=340)
+    col4.dataframe(stocks_df.corr(method = 'pearson', numeric_only=True), width=340)
 except:
     print("error")
 
@@ -83,7 +83,7 @@ col7.line_chart(stocks_3_df.iloc[:,1::])
 # correlation plot
 col8.write("##### Correlation Analysis")
 try:
-    col8.dataframe(stocks_3_df.corr(method = 'pearson'), width=340)
+    col8.dataframe(stocks_3_df.corr(method = 'pearson', numeric_only=True), width=340)
 except:
     print("error")
 
