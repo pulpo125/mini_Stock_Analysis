@@ -36,7 +36,7 @@ col3.line_chart(stocks_df.iloc[:,1::])
 
 # correlation plot
 col4.write("##### Correlation Analysis")
-st.dataframe(stocks_df.corr(method = 'pearson'), cmap='YlOrRd', annot=True)
+st.dataframe(stocks_df.corr(method = 'pearson'))
 
 st.markdown("##### :pushpin: 상관관계 분석 결과")
 st.markdown('''
