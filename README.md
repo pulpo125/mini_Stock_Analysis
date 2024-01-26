@@ -23,4 +23,5 @@
 |<img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">|프로젝트&형상 관리|
 
 ## 📚 프로젝트 결과
+- 주피터 노트북 파일(ipynb) 순서대로 데이터 분석 과정을 정리했습니다.
 ### 🟠 Streamlit 결과물: 🌐 [Go to Data Analysis Web](https://habangstockanalysis.streamlit.app)
