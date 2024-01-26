@@ -22,9 +22,9 @@ st.subheader('1) EDA')
 col1, col2 = st.columns(2)
 
 col1.markdown("##### 데이터프레임")
-col1.dataframe(data=stocks_df, width=100, height=330)
+col1.dataframe(data=stocks_df, width=340, height=330)
 col2.write("##### 기초통계량")
-col2.dataframe(data=stocks_df.describe(), width=100, height=330)
+col2.dataframe(data=stocks_df.describe(), width=340, height=330)
 
 
 # DA
