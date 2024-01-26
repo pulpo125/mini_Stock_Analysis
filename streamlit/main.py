@@ -14,7 +14,7 @@ st.write("대한민국 대표 엔터사들(JYP, YG, SM, HYBE)의 주가가 서�
 st.caption(":pencil2: 피어슨 상관계수는 주가를 바탕으로 -1에서 1 사이의 값을 리턴한다. 만약 상관계수가 0보다 크다면, 두 기업의 주가 사이에 양의 상관관계가 있다고 해석하고, 반대의 경우는 음의 상관관계가 있다고 해석 한다.")
 
 # 대표 엔터사 주식 데이터 
-stocks_df = pd.read_csv("../data/stocks_df.csv")
+stocks_df = pd.read_csv("./data/stocks_df.csv")
 
 
 # EDA
@@ -58,7 +58,7 @@ st.divider()
 st.header('2. 대표 엔터 3사 주식 상관관계 분석')
 
 # 대표 엔터 3사 주식 데이터 
-stocks_3_df = pd.read_csv("../data/stocks_3_df.csv")
+stocks_3_df = pd.read_csv("./data/stocks_3_df.csv")
 
 
 # EDA
@@ -103,7 +103,7 @@ st.markdown('''
 st.caption(":pencil2: 써클차트(가온차트) 연간 앨범 판매량 순위 중 3사와 관련된 앨범 데이터만 수집하여 Top 앨범을 선정하고, 컴백 날짜 이후 10 거래일을 컴백 기간으로 설정한다.")
 
 # 대표 엔터사 주식 데이터 
-yearly_top_album_df = pd.read_csv("../data/yearly_top_album_df.csv")
+yearly_top_album_df = pd.read_csv("./data/yearly_top_album_df.csv")
 
 st.markdown("##### :small_orange_diamond: 연간 Top 앨범 데이터프레임")
 st.dataframe(data=yearly_top_album_df, width=1000, height=330)
@@ -114,7 +114,7 @@ st.dataframe(yearly_top_album_df.head(1))
 
 # 2018년도 SM TOP 앨범 출시일 이후 10 거래일 간 주가 변동 데이터
 st.markdown("##### :small_orange_diamond: 2018년도 SM TOP 앨범 출시일 이후 10 거래일 간 주가 변동 데이터")
-sm_2018_df = pd.read_csv("../data/sm_2018_df.csv")
+sm_2018_df = pd.read_csv("./data/sm_2018_df.csv")
 st.dataframe(sm_2018_df)
 
 col9, col10 = st.columns(2)
@@ -133,7 +133,7 @@ st.divider()
 st.header('4. 5년 간 엔터사별 Top 앨범 출시에 따른 주가 변동률 분석')
 
 # 5 년 간 주가 변동률 데이터
-stock_price_fluctuation_rate = pd.read_csv("../data/stock_price_fluctuation_rate.csv")
+stock_price_fluctuation_rate = pd.read_csv("./data/stock_price_fluctuation_rate.csv")
 
 st.markdown("##### :small_orange_diamond: 5 년간 주가 변동률 데이터")
 st.dataframe(data=stock_price_fluctuation_rate, width=1000, height=330)
