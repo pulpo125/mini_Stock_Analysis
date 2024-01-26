@@ -36,7 +36,10 @@ col3.line_chart(stocks_df.iloc[:,1::])
 
 # correlation plot
 col4.write("##### Correlation Analysis")
-col4.dataframe(stocks_df.corr(method = 'pearson'), width=340)
+try:
+    col4.dataframe(stocks_df.corr(method = 'pearson'), width=340)
+except:
+    print("error")
 
 st.markdown("##### :pushpin: 상관관계 분석 결과")
 st.markdown('''
@@ -79,7 +82,10 @@ col7.line_chart(stocks_3_df.iloc[:,1::])
 
 # correlation plot
 col8.write("##### Correlation Analysis")
-col8.dataframe(stocks_3_df.corr(method = 'pearson'), width=340)
+try:
+    col8.dataframe(stocks_3_df.corr(method = 'pearson'), width=340)
+except:
+    print("error")
 
 st.markdown("##### :pushpin: 상관관계 분석 결과")
 st.markdown('''
